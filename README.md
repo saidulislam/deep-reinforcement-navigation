@@ -4,4 +4,4 @@
 For this project, I built a reinforcement learning (RL) agent that learns to navigate and collect yellow bananas in a large, square world. 
 The world/environment is similar to [Unity's Banana Collector environment](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#banana-collector).
 
-<img src="assets/banana_agent.gif" width="60%" align="top-left" alt="" title="Banana Agent" />
+<img src="images/banana_agent.gif" width="60%" align="top-left" alt="" title="Banana Agent" />
