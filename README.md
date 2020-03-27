@@ -15,3 +15,6 @@ Four discrete actions are available:
 - `1` move backward
 - `2` turn left
 - `3` turn right
+
+#### Goal
+A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana. Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas. In order to solve the environment, our agent must achieve an average score of +13 over 100 consecutive episodes.
