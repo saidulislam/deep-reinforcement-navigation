@@ -44,6 +44,6 @@ The issue with the regular Deep Q-Network (DQN) is it can overestimate Q-values 
 
 <img src="images/overestimating-Q-values.png" width="60%" align="top-left" alt="" title="Overestimating Q-values" />
 
-We can address this issue using Double Q-Learning, where one set of parameters `w` is used to select the best action, and another set of parameters `w'` is used to evaluate that action.  
+We can address the overestimating issue using Double Q-Learning, where one set of parameters `w` is used to select the best action, and another set of parameters `w'` is used to evaluate that action.  
 
 <img src="images/DDQN-slide.png" width="60%" align="top-left" alt="" title="DDQN" />
