@@ -42,8 +42,8 @@ For this project, I decided to use **Double Deep Q-Network (DDQN)** and **Duelin
 #### Double Deep Q-Network (DDQN)
 The issue with the regular Deep Q-Network (DQN) is it can overestimate Q-values ([Thrun & Schwartz, 1993](https://www.ri.cmu.edu/pub_files/pub1/thrun_sebastian_1993_1/thrun_sebastian_1993_1.pdf)). This may be harmful to training performance and sometimes can lead to suboptimal policies. The root cause of this is the max operation in the Bellman equation. As a solution to this problem, the authors proposed modifying the Bellman equation a bit.
 
-<img src="images/overestimating-Q-values.png" width="50%" align="top-left" alt="" title="Overestimating Q-values" />
+<img src="images/overestimating-Q-values.png" width="60%" align="top-left" alt="" title="Overestimating Q-values" />
 
 We can address this issue using Double Q-Learning, where one set of parameters `w` is used to select the best action, and another set of parameters `w'` is used to evaluate that action.  
 
-<img src="images/DDQN-slide.png" width="40%" align="top-left" alt="" title="DDQN" />
+<img src="images/DDQN-slide.png" width="60%" align="top-left" alt="" title="DDQN" />
