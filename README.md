@@ -47,3 +47,6 @@ The issue with the regular Deep Q-Network (DQN) is it can overestimate Q-values 
 We can address the overestimating issue using Double Q-Learning, where one set of parameters `w` is used to select the best action, and another set of parameters `w'` is used to evaluate that action.  
 
 <img src="images/DDQN-slide.png" width="60%" align="top-left" alt="" title="DDQN" />
+
+#### Dueling DQN
+This improvement was proposed in 2015, in the paper Dueling Network Architectures for Deep Learning [([8] Wang et al., 2015)](https://arxiv.org/pdf/1511.06581.pdf)
