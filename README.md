@@ -34,6 +34,9 @@ A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is
 
 3. Place the file in the DRLND GitHub repository, in the `p1_navigation/` folder, and unzip (or decompress) the file.
 
+#### Running Instruction/Training the Agent
+Follow the instructions and run all the cells in Navigation.ipynb to train the agent
+
 #### Approach
 The approach here is to pursue a policy that maximizes the reward for the agent. Since the effects of possible actions aren't known in advance, the optimal policy must be discovered by interacting with the environment and recording observations. Therefore, the agent "learns" the policy through a process of trial-and-error that iteratively maps various environment states to the actions that yield the highest reward. This approach or the algorithm is called **Q-Learning**.
 
@@ -49,4 +52,9 @@ We can address the overestimating issue using Double Q-Learning, where one set o
 <img src="images/DDQN-slide.png" width="60%" align="top-left" alt="" title="DDQN" />
 
 #### Dueling DQN
-This improvement was proposed in 2015, in the paper Dueling Network Architectures for Deep Learning [([8] Wang et al., 2015)](https://arxiv.org/pdf/1511.06581.pdf)
+This improvement was proposed in 2015, in the paper Dueling Network Architectures for Deep Learning [([8] Wang et al., 2015)](https://arxiv.org/pdf/1511.06581.pdf). The paper's contribution was an explicit separation of the value and the advantage in the network's architecture, which brought better training stability, faster convergence and better results on the Atari benchmark. The architecture difference from the classic DQN network is shown on the picture below. The classic DQN network (top) takes features from the convolution layer and, using fully-connected layers, transforms them into a vector of Q-values, one for each action. On the other hand, dueling DQN (bottom) takes convolution features and processes them using two independent paths - one path is responsible for V(s) prediction, which is just a single number, and another path predicts individual advantage values, having the same dimension as Q-values in the classic case. After that, we add V(s) to every value of A(s,a) to obtain the Q(s,a), which is used and trained as normal.
+
+<img src="images/dueling-networks-2.png" width="60%" align="top-left" alt="" title="Dueling DQN" />
+
+
+
