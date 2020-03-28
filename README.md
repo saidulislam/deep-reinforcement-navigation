@@ -70,7 +70,7 @@ This improvement was proposed in 2015, in the paper Dueling Network Architecture
 
 
 #### Plot of Rewards
-<img src="images/dueling-networks-2.png" width="60%" align="top-left" alt="" title="Dueling DQN" />
+<img src="images/plot-of-rewards.png" align="top-left" alt="" title="Dueling DQN" />
 
 #### Ideas for Future
 - Hyperparameters - Run lot more episodes like, 10,000 or 20,000. If possible, increase buffer size beyond 100,000. Play with learning rate a bit more.
