@@ -37,6 +37,9 @@ A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is
 #### Running Instruction/Training the Agent
 Follow the instructions and run all the cells in Navigation.ipynb to train the agent
 
+
+
+
 #### Approach
 The approach here is to pursue a policy that maximizes the reward for the agent. Since the effects of possible actions aren't known in advance, the optimal policy must be discovered by interacting with the environment and recording observations. Therefore, the agent "learns" the policy through a process of trial-and-error that iteratively maps various environment states to the actions that yield the highest reward. This approach or the algorithm is called **Q-Learning**.
 
