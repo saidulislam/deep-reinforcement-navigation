@@ -69,5 +69,10 @@ This improvement was proposed in 2015, in the paper Dueling Network Architecture
 - Bath size kept at 64 like other examples to save memory
 
 
+#### Plot of Rewards
+<img src="images/dueling-networks-2.png" width="60%" align="top-left" alt="" title="Dueling DQN" />
+
+#### Ideas for Future
+
 
 
