@@ -59,5 +59,15 @@ This improvement was proposed in 2015, in the paper Dueling Network Architecture
 
 <img src="images/dueling-networks-2.png" width="60%" align="top-left" alt="" title="Dueling DQN" />
 
+#### Hyperparameters
+- Episodes - Ran 1000 episodes for the project submission. Ran more espisodes (2000) during experiments, took longer but the score was not increasing as fast.
+- Epsilon - Agent selects action space at random. The value of epsilon starts at 1, and decreases gradually with time until 0.01. Decay set to 0.995.
+- Gamma - Kept 0.99 like many of the example exercises.
+- Learning rate - set to 0.0005
+- TAU (target param) - set to 0.001
+- Replay buffer size - set ot 100000
+- Bath size kept at 64 like other examples to save memory
+
+
 
 
